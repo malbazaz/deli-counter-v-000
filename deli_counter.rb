@@ -23,3 +23,12 @@ def take_a_number(katz_deli, newclient)
   newnumber = katz_deli.length
   puts "Welcome, #{newclient}. You are number #{newnumber} in line."
 end 
+
+def now_serving(katz_deli)
+  if katz_deli.length==0 
+    puts "There is nobody waiting to be served!"
+  else 
+    puts "#{katz_deli.first}"
+    katz_deli.shift
+  end 
+end 
