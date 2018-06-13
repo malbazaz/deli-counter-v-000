@@ -6,8 +6,12 @@ superline=[]
 if katz_deli.length==0 
   puts "The line is currently empty."
 else
-  katz_deli.each_with_index do |client, index|
-  superline << "#{index}. #{katz_deli}"
+  i=0  
+  m=1 
+  while i<deli.length
+superline[i] = "#{m}. #{katz_deli[i]}"
+i+=1 
+m+=1 
 end 
 string = superline.join(" ")
 puts "The line is currently: #{string}"
