@@ -17,3 +17,7 @@ string = superline.join(" ")
 puts "The line is currently: #{string}"
 end 
 end 
+
+def take_a_number(katz_deli, newclient)
+  puts "#{newclient}, #{katz_deli.length}"
+end 
