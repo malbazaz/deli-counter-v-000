@@ -19,6 +19,7 @@ end
 end 
 
 def take_a_number(katz_deli, newclient)
-  newnumber = katz_deli.length + 1 
+  katz_deli << newclient 
+  newnumber = katz_deli.length
   puts "Welcome, #{newclient}. You are number #{newnumber} in line."
 end 
